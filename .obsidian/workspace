@@ -43,7 +43,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical"
               }
@@ -131,14 +131,14 @@
   "active": "fe6cb0a5540d8a88",
   "lastOpenFiles": [
     "安全笔记/Doker 教程.md",
-    "安全笔记/Sqlmap 使用指南.md",
-    "安全笔记/Nmap 使用指南.md",
     "安全笔记/Hydra 使用指南.md",
+    "安全笔记/DNS 配置.md",
+    "安全笔记/Nmap 使用指南.md",
+    "安全笔记/Sqlmap 使用指南.md",
     "安全笔记/信息收集.md",
     "安全笔记/网络空间安全.md",
     "安全笔记/内网安全.md",
     "安全笔记/查询语法.md",
-    "Pikachu漏洞练习平台/暴力破解.md",
-    "安全笔记/Image.md"
+    "Pikachu漏洞练习平台/暴力破解.md"
   ]
 }
