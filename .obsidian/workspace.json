@@ -4,47 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "8dd83b219a99b650",
+        "id": "c7c70738c22223ef",
         "type": "tabs",
         "children": [
           {
-            "id": "079aac2ed609c78a",
+            "id": "8cc2f30ac953b66a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具指南/Doker 使用指南.md",
+                "file": "安全笔记/Linux 提权.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b9238df9043ee85b",
+            "id": "d0ffd25e0695892e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具指南/Hydra 使用指南.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2c0523c7a49aa0b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工具指南/Dirb 使用指南.md",
+                "file": "安全笔记/Windows 提权.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具指南/Dirb 使用指南.md",
+                "file": "安全笔记/Linux 提权.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具指南/Dirb 使用指南.md",
+                "file": "安全笔记/Linux 提权.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具指南/Dirb 使用指南.md"
+                "file": "安全笔记/Linux 提权.md"
               }
             }
           }
@@ -164,17 +151,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "921bcd8f9629280f",
+  "active": "8cc2f30ac953b66a",
   "lastOpenFiles": [
-    "工具指南/Nmap 使用指南.md",
+    "安全笔记/Windows 提权.md",
+    "安全笔记/Linux 提权.md",
     "工具指南/Hydra 使用指南.md",
-    "工具指南/Doker 使用指南.md",
+    "安全笔记/Rbash 受限的bash绕过.md",
     "工具指南/Wpscan 使用指南.md",
-    "工具指南/Direarch 使用指南.md",
-    "工具指南/Dirbuster 使用指南.md",
-    "工具指南/Dirb 使用指南.md",
+    "工具指南/Doker 使用指南.md",
+    "工具指南/Arp-scan 使用指南.md",
+    "工具指南/Nmap 使用指南.md",
     "工具指南/Arpwatch 使用指南.md",
-    "工具指南/Arping 使用指南.md",
-    "工具指南/Arp-scan 使用指南.md"
+    "工具指南/Arping 使用指南.md"
   ]
 }
