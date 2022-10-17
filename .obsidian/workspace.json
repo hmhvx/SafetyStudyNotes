@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c7c70738c22223ef",
+        "id": "3c94b4e3586f4b69",
         "type": "tabs",
         "children": [
           {
-            "id": "8cc2f30ac953b66a",
+            "id": "262dd8098046bae2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "安全笔记/Linux 提权.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d0ffd25e0695892e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "安全笔记/Windows 提权.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 254.5,
+    "collapsed": true
   },
   "right": {
     "id": "457453db0624d500",
@@ -146,22 +135,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 288.5
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "8cc2f30ac953b66a",
+  "active": "262dd8098046bae2",
   "lastOpenFiles": [
-    "安全笔记/Windows 提权.md",
+    "PortSwigger/1.SQL 注入.md",
+    "Markdown/广东东软实训day2.md",
     "安全笔记/Linux 提权.md",
-    "工具指南/Hydra 使用指南.md",
-    "安全笔记/Rbash 受限的bash绕过.md",
+    "安全笔记/1.网络空间安全.md",
+    "安全笔记/查询语法.md",
+    "安全笔记/信息收集.md",
+    "安全笔记/内网安全.md",
+    "安全笔记/Windows 提权.md",
     "工具指南/Wpscan 使用指南.md",
-    "工具指南/Doker 使用指南.md",
-    "工具指南/Arp-scan 使用指南.md",
-    "工具指南/Nmap 使用指南.md",
-    "工具指南/Arpwatch 使用指南.md",
-    "工具指南/Arping 使用指南.md"
+    "工具指南/Sqlmap 使用指南.md"
   ]
 }
