@@ -65,8 +65,6 @@ usemodule privesc/gpp
 
 ## Byass UAC 提权
 
-
-
 ```copy
 #Msf 
 exploit/windows/local/ask #弹出UAC确认窗口，点击后获得system权限 exploit/windows/local/bypassuac #此模块将通过进程注入使用可信任发布者证书绕过Windows UAC，它将生成关闭UAC标志的第二个shell。 exploit/windows/local/bypassuac_injection #此模块将通过进程注入使用可信任的发布者证书绕过Windows UAC。它将生成关闭UAC标志的第二个shell。在普通技术中，该模块使用反射式DLL注入技术并只除去了DLL payload 二进制文件，而不是三个单独的二进制文件。但是，它需要选择正确的体系架构（对于SYSWOW64系统也使用x64）。如果指定exe::custom，应在单独的进程中启动 payload 后调用ExitProcess（） 
