@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d1ae6c90261b136c",
+        "id": "8fc55ad81b44bdf2",
         "type": "tabs",
         "children": [
           {
-            "id": "fce88d78be622af6",
+            "id": "f0495ef092da94e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markdown/Kali 突然无网络.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "673208190ef6cfc2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "内网渗透/Windows 提权.md",
+                "file": "内网渗透/隧道技术.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "内网渗透/Windows 提权.md",
+                "file": "内网渗透/隧道技术.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "内网渗透/Windows 提权.md",
+                "file": "内网渗透/隧道技术.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "内网渗透/Windows 提权.md"
+                "file": "内网渗透/隧道技术.md"
               }
             }
           }
@@ -147,19 +134,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 288.5,
+    "collapsed": true
   },
-  "active": "673208190ef6cfc2",
+  "active": "f0495ef092da94e7",
   "lastOpenFiles": [
-    "内网渗透/Windows 域内信息收集.md",
-    "内网渗透/Windows 提权.md",
-    "Markdown/Kali 突然无网络.md",
-    "Markdown/Mysql配置.md",
-    "内网渗透/Windows 本地信息收集.md",
+    "内网渗透/域内横向.md",
+    "内网渗透/隧道技术.md",
     "内网渗透/免杀.md",
+    "内网渗透/内网常用协议.md",
+    "内网渗透/Kerberos 协议.md",
     "内网渗透/Linux 提权.md",
-    "PortSwigger/4.命令注入.md",
-    "PortSwigger/1.SQL 注入.md",
-    "工具指南/Masscan 使用指南.md"
+    "内网渗透/meterpreter.md",
+    "内网渗透/Rbash 受限的bash绕过.md",
+    "内网渗透/Windows 本地信息收集.md",
+    "内网渗透/Windows 域内信息收集.md"
   ]
 }
