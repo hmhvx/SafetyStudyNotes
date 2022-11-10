@@ -7,7 +7,7 @@ ifconfig -a
 方法二：
 
 ```copy
-vim /etc/network/interface
+vim /etc/network/interfaces
 ```
 
 
