@@ -11,12 +11,8 @@
             "id": "517479be28d7ee66",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工具指南/Sqlmap 使用指南.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具指南/Sqlmap 使用指南.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具指南/Sqlmap 使用指南.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "工具指南/Sqlmap 使用指南.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -136,17 +128,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "517479be28d7ee66",
+  "active": "921bcd8f9629280f",
   "lastOpenFiles": [
+    "华为认证/理论基础.md",
+    "工具指南/Sqlmap 使用指南.md",
     "Markdown/Kali 开启apache.md",
     "内网渗透/Rbash 受限的bash绕过.md",
     "工具指南/John 使用指南.md",
-    "工具指南/Sqlmap 使用指南.md",
     "工具指南/PowerShsell Empire 使用指南.md",
     "工具指南/Arp-scan 使用指南.md",
     "工具指南/Arping 使用指南.md",
     "工具指南/Crunch 使用指南.md",
-    "工具指南/Nikto 使用教程.md",
-    "工具指南/Hydra 使用指南.md"
+    "工具指南/Nikto 使用教程.md"
   ]
 }
