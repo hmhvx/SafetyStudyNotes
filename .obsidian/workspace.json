@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "102835da8c709809",
+        "id": "9e0cd94c3018202c",
         "type": "tabs",
         "children": [
           {
-            "id": "517479be28d7ee66",
+            "id": "5da697fd8675a5aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "华为认证/理论基础.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "华为认证/理论基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "华为认证/理论基础.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "华为认证/理论基础.md"
+              }
             }
           }
         ],
@@ -126,19 +134,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 288.5,
+    "collapsed": true
   },
-  "active": "921bcd8f9629280f",
+  "active": "5da697fd8675a5aa",
   "lastOpenFiles": [
-    "华为认证/理论基础.md",
-    "工具指南/Sqlmap 使用指南.md",
-    "Markdown/Kali 开启apache.md",
-    "内网渗透/Rbash 受限的bash绕过.md",
-    "工具指南/John 使用指南.md",
-    "工具指南/PowerShsell Empire 使用指南.md",
-    "工具指南/Arp-scan 使用指南.md",
-    "工具指南/Arping 使用指南.md",
-    "工具指南/Crunch 使用指南.md",
-    "工具指南/Nikto 使用教程.md"
+    "编程资料/Python/Python 操作列表.md",
+    "编程资料/Python/Python 列表.md",
+    "编程资料/Python/Python 变量和简单数据类型.md",
+    "编程资料/Python/Python 基础语法.md",
+    "编程资料/Python/Python 用户输入和while循环.md",
+    "编程资料/Python/Python 文件和异常.md",
+    "编程资料/Python/Python 类.md",
+    "编程资料/Python/Python 函数.md",
+    "编程资料/Python/Python 字典.md",
+    "编程资料/Python/Python if语句.md"
   ]
 }
