@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9e0cd94c3018202c",
+        "id": "4bbcf578bcf81902",
         "type": "tabs",
         "children": [
           {
-            "id": "5da697fd8675a5aa",
+            "id": "9d2a5b5711dc5772",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "华为认证/理论基础.md",
+                "file": "编程资料/Python 学习笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "华为认证/理论基础.md",
+                "file": "编程资料/Python 学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "华为认证/理论基础.md",
+                "file": "编程资料/Python 学习笔记.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "华为认证/理论基础.md"
+                "file": "编程资料/Python 学习笔记.md"
               }
             }
           }
@@ -137,17 +137,17 @@
     "width": 288.5,
     "collapsed": true
   },
-  "active": "5da697fd8675a5aa",
+  "active": "9d2a5b5711dc5772",
   "lastOpenFiles": [
-    "编程资料/Python/Python 操作列表.md",
-    "编程资料/Python/Python 列表.md",
     "编程资料/Python/Python 变量和简单数据类型.md",
+    "编程资料/Python/Python 函数.md",
+    "编程资料/Python/Python 操作列表.md",
+    "工具指南/Doker 使用指南.md",
+    "Markdown/pycharm 激活.md",
+    "华为认证/理论基础.md",
+    "编程资料/Python/Python 列表.md",
     "编程资料/Python/Python 基础语法.md",
     "编程资料/Python/Python 用户输入和while循环.md",
-    "编程资料/Python/Python 文件和异常.md",
-    "编程资料/Python/Python 类.md",
-    "编程资料/Python/Python 函数.md",
-    "编程资料/Python/Python 字典.md",
-    "编程资料/Python/Python if语句.md"
+    "编程资料/Python/Python 文件和异常.md"
   ]
 }
