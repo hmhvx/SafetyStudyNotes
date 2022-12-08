@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9d2a5b5711dc5772",
+            "id": "af881d90c9b9f931",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "编程资料/Python 学习笔记.md",
+                "file": "Markdown/防火墙.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "457453db0624d500",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "编程资料/Python 学习笔记.md",
+                "file": "Markdown/防火墙.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "编程资料/Python 学习笔记.md",
+                "file": "Markdown/防火墙.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "编程资料/Python 学习笔记.md"
+                "file": "Markdown/防火墙.md"
               }
             }
           }
@@ -134,20 +135,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5,
-    "collapsed": true
+    "width": 288.5
   },
-  "active": "9d2a5b5711dc5772",
+  "active": "af881d90c9b9f931",
   "lastOpenFiles": [
+    "编程资料/Python 学习笔记.md",
+    "Markdown/防火墙.md",
+    "Markdown/pycharm 激活.md",
     "编程资料/Python/Python 变量和简单数据类型.md",
     "编程资料/Python/Python 函数.md",
     "编程资料/Python/Python 操作列表.md",
     "工具指南/Doker 使用指南.md",
-    "Markdown/pycharm 激活.md",
     "华为认证/理论基础.md",
     "编程资料/Python/Python 列表.md",
-    "编程资料/Python/Python 基础语法.md",
-    "编程资料/Python/Python 用户输入和while循环.md",
-    "编程资料/Python/Python 文件和异常.md"
+    "编程资料/Python/Python 基础语法.md"
   ]
 }
