@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4bbcf578bcf81902",
+        "id": "0ce99099196f4d83",
         "type": "tabs",
         "children": [
           {
-            "id": "af881d90c9b9f931",
+            "id": "10472b14c2b1e1b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -137,17 +137,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "af881d90c9b9f931",
+  "active": "10472b14c2b1e1b2",
   "lastOpenFiles": [
-    "编程资料/Python 学习笔记.md",
+    "华为认证/理论基础.md",
     "Markdown/防火墙.md",
+    "华为认证/CCNA-网络三要素.md",
+    "工具指南/Sqlmap 使用指南.md",
+    "编程资料/Python 学习笔记.md",
     "Markdown/pycharm 激活.md",
     "编程资料/Python/Python 变量和简单数据类型.md",
     "编程资料/Python/Python 函数.md",
     "编程资料/Python/Python 操作列表.md",
-    "工具指南/Doker 使用指南.md",
-    "华为认证/理论基础.md",
-    "编程资料/Python/Python 列表.md",
-    "编程资料/Python/Python 基础语法.md"
+    "工具指南/Doker 使用指南.md"
   ]
 }
