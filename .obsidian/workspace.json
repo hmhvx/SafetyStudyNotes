@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "10472b14c2b1e1b2",
+            "id": "ddc29adfd0a4d93e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markdown/防火墙.md",
+                "file": "运维实践/2.文件和用户.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "457453db0624d500",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Markdown/防火墙.md",
+                "file": "运维实践/2.文件和用户.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Markdown/防火墙.md",
+                "file": "运维实践/2.文件和用户.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Markdown/防火墙.md"
+                "file": "运维实践/2.文件和用户.md"
               }
             }
           }
@@ -135,19 +134,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 288.5,
+    "collapsed": true
   },
-  "active": "10472b14c2b1e1b2",
+  "active": "ddc29adfd0a4d93e",
   "lastOpenFiles": [
-    "华为认证/理论基础.md",
-    "Markdown/防火墙.md",
-    "华为认证/CCNA-网络三要素.md",
-    "工具指南/Sqlmap 使用指南.md",
-    "编程资料/Python 学习笔记.md",
-    "Markdown/pycharm 激活.md",
-    "编程资料/Python/Python 变量和简单数据类型.md",
-    "编程资料/Python/Python 函数.md",
-    "编程资料/Python/Python 操作列表.md",
-    "工具指南/Doker 使用指南.md"
+    "运维实践/1.系统安装.md",
+    "Portswigger/1.SQL 注入.md",
+    "暗月笔记/2.密码穷举/BurpSuite.md",
+    "暗月笔记/2.密码穷举/密码穷举.md",
+    "暗月笔记/2.密码穷举/常见端口.md",
+    "暗月笔记/1.信息收集/查询语法.md",
+    "暗月笔记/1.信息收集/信息收集.md",
+    "网络安全/1.计算机基础01-计算机的选购.md",
+    "网络安全/2.计算机基础02-计算机硬件组成.md",
+    "Portswigger/2.身份验证.md"
   ]
 }

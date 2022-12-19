@@ -39,3 +39,7 @@
 print("%s %d %f" % (test1,test2,test3))
 print(f'this is {test1}')
 m.n 控制数据的宽度和精度
+
+## 循环
+
+
